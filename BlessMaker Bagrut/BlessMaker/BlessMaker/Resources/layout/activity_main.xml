@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    
+    android:background="@color/colorPrimary">
+    <LinearLayout 
+        android:background="@color/colorPrimary"
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:id="@+id/mainlay"
+        android:gravity="center_horizontal"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:gravity="center"
+            android:orientation="vertical"
+            android:layout_marginTop="10dp"
+            android:layout_alignParentBottom="true"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <EditText
+                android:hint="Recipiant (must fill)"
+                android:paddingLeft="5dp"
+                android:inputType="textPersonName"
+                android:layout_width="300dp"
+                android:layout_height="40dp"
+                android:background="@drawable/edittextborder"
+                android:minWidth="25px"
+                android:minHeight="25px"
+                android:id="@+id/editText1" /> 
+            <EditText
+                android:hint="Subject (must fill)"
+                android:paddingLeft="5dp"
+                android:layout_marginTop="5dp"
+                android:layout_width="300dp"
+                android:layout_height="40dp"
+                android:background="@drawable/edittextborder"
+                android:id="@+id/editText3" />
+            <EditText
+                android:hint="Additional Comments"
+                android:paddingLeft="5dp"
+                android:layout_marginTop="5dp"
+                android:inputType="textMultiLine"
+                android:layout_width="300dp"
+                android:layout_height="40dp"
+                android:background="@drawable/edittextborder"
+                android:id="@+id/editText4" />
+            <LinearLayout
+            android:gravity="center_horizontal"
+            android:orientation="horizontal"
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+                <TextView
+                android:background="@drawable/blackroundbutton"
+                android:textColor="#ffffff"
+                android:gravity="center"
+                 android:textSize="15dp"
+                android:text="Pick a DATE"
+                android:textFontWeight="1000"
+                android:fontFamily="casual"
+                android:layout_marginHorizontal="15dp"
+                android:layout_width="100dp"
+                android:layout_height="55dp"
+                android:id="@+id/PickDate"/>
+                <TextView
+                android:text="Didn't chose a date yet"
+                android:textSize="22dp"   
+                android:textColor="@android:color/white"
+                android:fontFamily="casual"
+                android:textStyle="bold"
+                android:layout_width="270dp"
+                android:layout_height="50dp"
+                android:id="@+id/DateView" />
+            </LinearLayout>
+
+
+        </LinearLayout>
+    
+        <LinearLayout
+            android:gravity="center"
+            android:orientation="vertical"
+            android:layout_alignParentBottom="true"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+        <TextView
+            android:textSize="30dp"
+            android:textDirection="ltr"
+            android:text="Result: "
+            android:textColor="@android:color/white"
+            android:fontFamily="casual"
+            android:textStyle="bold"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"/>
+        <EditText
+            android:inputType="textMultiLine"
+            android:id="@+id/textView1"
+            android:layout_width="350dp"
+            android:layout_height="290dp"
+            android:background="@drawable/square"
+            />
+        <LinearLayout
+            android:gravity="center_horizontal"
+            android:orientation="horizontal"
+            android:layout_marginTop="15dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:background="@drawable/blackroundbutton"
+                android:textColor="#ffffff"
+                android:gravity="center"
+                android:text="Generate"
+                android:textSize="23dp"
+                android:textFontWeight="1000"
+                android:fontFamily="casual"
+                android:layout_marginHorizontal="30dp"
+                android:layout_width="120dp"
+                android:layout_height="50dp"
+                android:id="@+id/BtnGenerate"/>
+            <TextView
+                android:background="@drawable/blackroundbutton"
+                android:textColor="#ffffff"
+                android:gravity="center"
+                android:text="Save"
+                android:textSize="23dp"
+                android:textFontWeight="1000"
+                android:fontFamily="casual"
+                android:layout_marginHorizontal="30dp"
+                android:layout_width="120dp"
+                android:layout_height="50dp"
+                android:id="@+id/BtnSave"/>
+
+        </LinearLayout>
+            <TextView
+                android:background="@drawable/blackroundbutton"
+                android:textColor="#ffffff"
+                android:layout_marginTop="9dp"
+                android:gravity="center"
+                android:text="My Blesses"
+                android:textSize="23dp"
+                android:textFontWeight="1000"
+                android:fontFamily="casual"
+                android:layout_marginHorizontal="30dp"
+                android:layout_width="180dp"
+                android:layout_height="70dp"
+                android:id="@+id/MyBlesses"/>
+             <TextView
+                android:background="@drawable/blackroundbutton"
+                android:textColor="#ffffff"
+                android:layout_marginTop="-17dp"
+                android:layout_marginRight="150dp"
+                android:gravity="center"
+                android:text="Settings"
+                android:textSize="15dp"
+                android:textFontWeight="1000"
+                android:fontFamily="casual"
+                android:layout_width="100dp"
+                android:layout_height="40dp"
+                android:id="@+id/Settings"/>
+    </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

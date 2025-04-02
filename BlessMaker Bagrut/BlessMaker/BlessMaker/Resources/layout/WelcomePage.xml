@@ -1,0 +1,107 @@
+﻿<?xml version="1.0" encoding="utf-8" ?> 
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:id="@+id/mainlay"
+    android:background="?android:attr/colorPrimary">
+    <LinearLayout
+        android:orientation="vertical"
+        android:gravity="center_horizontal"
+        android:layout_width="400dp"
+        android:layout_height="-100dp">
+        <LinearLayout
+            android:layout_width="400dp"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_gravity="center_horizontal">
+            <TextView
+                android:background="@drawable/blackroundbutton"
+                android:textColor="#ffffff"
+                android:gravity="center"
+                android:text="Change background"
+                android:textSize="14dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="-15dp"
+                android:textFontWeight="1000"
+                android:fontFamily="casual"
+                android:layout_width="110dp"
+                android:layout_height="55dp"
+                android:id="@+id/BtnChangebackround"/>
+            <TextView
+                android:id="@+id/blessmaker"
+                android:layout_marginTop="10dp"
+                android:textColor="#ffffff"
+                android:textFontWeight="600"
+                android:fontFamily="casual"
+                android:textSize="30dp"
+                android:text="  BlessMaker"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+        </LinearLayout>
+            <TextView
+            android:id="@+id/welcome"
+            android:layout_marginTop="10dp"
+            android:textColor="#ffffff"
+            android:textFontWeight="600"
+            android:fontFamily="casual"
+            android:textSize="30dp"
+            android:text="Welcome "
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+    <LinearLayout
+        android:orientation="vertical"
+        android:gravity="center_horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="320dp">
+        <ImageButton
+            android:id="@+id/WriteABless"
+            android:background="@drawable/circlestartbless"
+            android:textColor="#ffffff"
+            android:gravity="center"
+            android:text="@Make Me A Bless"
+            android:textFontWeight="1000"
+            android:layout_marginTop="10dp"
+            android:fontFamily="casual"
+            android:layout_marginHorizontal="30dp"
+            android:layout_width="280dp"
+            android:layout_height="280dp"
+            android:contentDescription="description" />
+    </LinearLayout>
+        <LinearLayout
+        android:orientation="vertical"
+        android:gravity="center_horizontal"
+        android:layout_width="210dp"
+        android:layout_height="-100dp">
+        <TextView
+            android:layout_marginTop="10dp"
+            android:textColor="#ffffff"
+            android:textFontWeight="1000"
+            android:fontFamily="casual"
+            android:textSize="23dp"
+            android:text="Upcoming Events:"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+
+    <ListView
+        
+            android:layout_marginTop="10dp"
+            android:layout_marginHorizontal="30dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/dataLv2"/>
+    <TextView
+            android:id="@+id/NoCloseEvents"
+            android:layout_marginTop="10dp"
+            android:textColor="#ffffff"
+            android:textFontWeight="1000"
+            android:fontFamily="casual"
+            android:textSize="36dp"
+            android:text="No close events"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+</LinearLayout>

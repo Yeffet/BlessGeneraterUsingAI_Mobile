@@ -1,0 +1,55 @@
+﻿<?xml version="1.0" encoding="utf-8" ?> 
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/mainlay"
+    android:background="@color/colorPrimary">
+                <TextView
+                android:id="@+id/blessmaker"
+                android:layout_marginTop="10dp"
+                android:textColor="#ffffff"
+                android:textFontWeight="600"
+                android:fontFamily="casual"
+                android:textSize="30dp"
+                android:text=" Pick a date for the event:"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+    <LinearLayout
+        android:gravity="center"
+        android:orientation="vertical"
+        android:layout_marginBottom="20dp"
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="600dp">
+        <DatePicker
+
+            android:layout_marginLeft="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="430dp"
+            android:id="@+id/DatePicker"
+            android:layout_gravity="right"/>
+        <TextView
+        android:background="@drawable/blackroundbutton"
+        android:textColor="#ffffff"
+        android:gravity="center"
+        android:text="Save Date"
+        android:textFontWeight="1000"
+        android:fontFamily="casual"
+        android:layout_marginTop="30dp"
+        android:layout_marginHorizontal="30dp"
+        android:layout_width="150dp"
+        android:layout_height="55dp"
+        android:id="@+id/SaveDate"/>
+        <TextView
+        android:text="Display Date"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/textDate"
+        android:textColor="#ffffff"
+        android:textFontWeight="600"
+        android:fontFamily="casual"
+        android:textSize="35dp"
+        android:gravity="center"/>
+    </LinearLayout>
+</LinearLayout>
